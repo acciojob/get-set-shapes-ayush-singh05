@@ -16,8 +16,13 @@ class Rectangle {
 }
 
 class Square extends Animal {
-	getPerimeter(){
-		return (4*getArea())
+	constructor(width)
+	{
+		super(width,width);
+	}
+	getPerimeter()
+	{
+		return 4*(this.width);
 	}
 }
 
